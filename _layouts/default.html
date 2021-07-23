@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
   </head>
   <body>
-      layout<br>
     {% include navigation.html %}
     {{ content }}
   </body>
