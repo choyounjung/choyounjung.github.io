@@ -57,6 +57,7 @@ plugins:
 #   - vendor/ruby/
 sass:
   sass_dir: _sass
+  style: compressed
 #    sass_dir: /node_modules/bootstrap/scss/
 
 # Exclude from processing.
