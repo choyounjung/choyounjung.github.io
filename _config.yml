@@ -31,8 +31,7 @@ github_username:  choyounjung
 
 # Build settings
 # theme: minima
-# plugins:
-  # - jekyll-feed
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -56,12 +55,12 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-# sass:
-#    sass_dir: node_modules/bootstrap/scss
+sass:
+   sass_dir: node_modules/bootstrap/scss/
 
 # Exclude from processing.
-# exclude:
-#   - node_modules
+exclude:
+  - node_modules/
 
 collections:
   authors:
