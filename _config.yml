@@ -55,8 +55,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-sass:
-   sass_dir: /node_modules/bootstrap/scss/
+# sass:
+#    sass_dir: /node_modules/bootstrap/scss/
 
 # Exclude from processing.
 exclude:
