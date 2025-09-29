@@ -96,12 +96,14 @@ li span {
     width: 100dvw;
     height: 100dvh;
     display: flex;
-    align-content: center;
-    justify-content: center;
-    overflow: hidden;
-    background: url(/assets/img/NSW_2375.jpg);
+    background: url(/assets/img/title.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    align-items: center;
+}
+.main img {
+    width:100%
 }
 
 .contents {
@@ -117,7 +119,6 @@ li span {
     align-items: center;
     gap: 20px;
     justify-content: space-between;
-    padding: 24px;
 }
 .card {
     height:fit-content;
@@ -134,6 +135,7 @@ li span {
     text-align: center;
     position: relative;
     transition: all 0.2s ease-in-out;
+    margin: 0 1rem;
 }
 .card p { text-align: center;}
 
@@ -212,24 +214,13 @@ li span {
     position: sticky;
     top: 0;
     padding: 20px 0;
-
-
-    /* margin-top: calc(100dvh - 470px);
-    position: sticky;
-    top: 0;
-    padding: 10px 0;
-    height: fit-content;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    border-left: 1px solid rgba(255, 255, 255, 0.3);
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 999999;
+}
+.header.fixed {
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: all 0.2s ease-in-out;
-    z-index: 999999; */
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.5);
+    z-index: 999999;
 }
 .header .title {
     font-family: "Allura", cursive;
@@ -245,6 +236,7 @@ li span {
     padding-bottom: 0;
     font-family: "Sansation", sans-serif;
     font-size: 10px;
+    margin: 0;
 }
 
 a.scroll {
@@ -332,7 +324,9 @@ a.scroll span::before {
             <!-- place navbar here -->
         </header>
         <main class="lottemartdream">
-            <div class="main"></div>
+            <div class="main">
+                <img src="/assets/img/title.jpg">
+            </div>
             <div class="contents blur" style="--blur-value: 0">
                 <div class="header">
                     <p class="title">Hwa Young & Youn Jung</p>
@@ -355,7 +349,7 @@ a.scroll span::before {
 
                 
 
-                <div class="card">
+                <div class="card" style="padding: 0">
                     <!-- <div class="card-header none">갤러리</div> -->
                     <div class="card-body gallary">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -449,15 +443,18 @@ a.scroll span::before {
                     <div class="card-header normal w700">예식 안내</div>
                     
                     <div class="card-body">
-                        <p>
-                            <div class="datepicker-days" style=""><table class="table-condensed" style="
-                                width: 100%;
-                            "><thead><tr><th class="dow">일</th><th class="dow">월</th><th class="dow">화</th><th class="dow">수</th><th class="dow">목</th><th class="dow">금</th><th class="dow">토</th></tr></thead><tbody><tr><td class="old day" data-date="1759017600000">28</td><td class="old day" data-date="1759104000000">29</td><td class="old day" data-date="1759190400000">30</td><td class="day" data-date="1759276800000">1</td><td class="day" data-date="1759363200000">2</td><td class="day" data-date="1759449600000">3</td><td class="day" data-date="1759536000000">4</td></tr><tr><td class="day" data-date="1759622400000">5</td><td class="day" data-date="1759708800000">6</td><td class="day" data-date="1759795200000">7</td><td class="day" data-date="1759881600000">8</td><td class="day" data-date="1759968000000">9</td><td class="day" data-date="1760054400000">10</td><td class="day" data-date="1760140800000">11</td></tr><tr><td class="day" data-date="1760227200000">12</td><td class="day" data-date="1760313600000">13</td><td class="day" data-date="1760400000000">14</td><td class="day" data-date="1760486400000">15</td><td class="day" data-date="1760572800000">16</td><td class="day" data-date="1760659200000">17</td><td class="day" data-date="1760745600000">18</td></tr><tr><td class="day" data-date="1760832000000">19</td><td class="day" data-date="1760918400000">20</td><td class="day" data-date="1761004800000">21</td><td class="day" data-date="1761091200000">22</td><td class="day" data-date="1761177600000">23</td><td class="day" data-date="1761264000000">24</td><td class="day" data-date="1761350400000">25</td></tr><tr><td class="active day" data-date="1761436800000" style="
-                                background: #000;
-                                color: #fff;
-                                border-radius: 20px;
-                            ">26</td><td class="day" data-date="1761523200000">27</td><td class="day" data-date="1761609600000">28</td><td class="day" data-date="1761696000000">29</td><td class="day" data-date="1761782400000">30</td><td class="day" data-date="1761868800000">31</td><td class="new day" data-date="1761955200000">1</td></tr><tr><td class="new day" data-date="1762041600000">2</td><td class="new day" data-date="1762128000000">3</td><td class="new day" data-date="1762214400000">4</td><td class="new day" data-date="1762300800000">5</td><td class="new day" data-date="1762387200000">6</td><td class="new day" data-date="1762473600000">7</td><td class="new day" data-date="1762560000000">8</td></tr></tbody><tfoot><tr><th colspan="7" class="today" style="display: none;">Today</th></tr><tr><th colspan="7" class="clear" style="display: none;">Clear</th></tr></tfoot></table></div>
-                        </p>
+
+                    <p class="card-text">
+                        10월
+                    </p>
+                    <div class="datepicker-days" style=""><table class="table-condensed" style="
+                        width: 100%;
+                    "><thead><tr><th class="dow">일</th><th class="dow">월</th><th class="dow">화</th><th class="dow">수</th><th class="dow">목</th><th class="dow">금</th><th class="dow">토</th></tr></thead><tbody><tr><td class="old day" data-date="1759017600000"></td><td class="old day" data-date="1759104000000"></td><td class="old day" data-date="1759190400000"></td><td class="day" data-date="1759276800000">1</td><td class="day" data-date="1759363200000">2</td><td class="day" data-date="1759449600000">3</td><td class="day" data-date="1759536000000">4</td></tr><tr><td class="day" data-date="1759622400000">5</td><td class="day" data-date="1759708800000">6</td><td class="day" data-date="1759795200000">7</td><td class="day" data-date="1759881600000">8</td><td class="day" data-date="1759968000000">9</td><td class="day" data-date="1760054400000">10</td><td class="day" data-date="1760140800000">11</td></tr><tr><td class="day" data-date="1760227200000">12</td><td class="day" data-date="1760313600000">13</td><td class="day" data-date="1760400000000">14</td><td class="day" data-date="1760486400000">15</td><td class="day" data-date="1760572800000">16</td><td class="day" data-date="1760659200000">17</td><td class="day" data-date="1760745600000">18</td></tr><tr><td class="day" data-date="1760832000000">19</td><td class="day" data-date="1760918400000">20</td><td class="day" data-date="1761004800000">21</td><td class="day" data-date="1761091200000">22</td><td class="day" data-date="1761177600000">23</td><td class="day" data-date="1761264000000">24</td><td class="day" data-date="1761350400000">25</td></tr><tr><td class="active day" data-date="1761436800000" style="
+                        background: #000;
+                        color: #fff;
+                        border-radius: 20px;
+                    ">26</td><td class="day" data-date="1761523200000">27</td><td class="day" data-date="1761609600000">28</td><td class="day" data-date="1761696000000">29</td><td class="day" data-date="1761782400000">30</td><td class="day" data-date="1761868800000">31</td><td class="new day" data-date="1761955200000"></td></tr></tbody></table></div>
+                    
                     <p class="card-text">
                         <span class="fw-bold">2025년 10월 26일 일요일 낮 12시</span>
                     </p>
@@ -570,15 +567,21 @@ a.scroll span::before {
         ></script>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.header').setAttribute('data-init', document.querySelector('.header').offsetTop);
     document.querySelector('.contents').addEventListener('scroll', (e) => {
-
-        console.log(document.querySelector('main').clientHeight, e.target.scrollTop)
         let val = e.target.scrollTop / (document.querySelector('main').clientHeight / 2) * 100;
-        document.querySelector('.contents').setAttribute('style', `--blur-value: ${val > 5 ? 5 : val}px`)
+        document.querySelector('.contents').setAttribute('style', `--blur-value: ${val > 10 ? 10 : val}px`)
         if (e.target.scrollTop > 0) {
             document.querySelector('.contents').classList.add('blur');
         } else {
             document.querySelector('.contents').classList.remove('blur');
+        }
+
+        console.log(document.querySelector('.header').getAttribute('data-init'), document.querySelector('.header').offsetTop)
+        if (document.querySelector('.header').getAttribute('data-init') == document.querySelector('.header').offsetTop) {
+            document.querySelector('.header').classList.remove('fixed');
+        } else {
+            document.querySelector('.header').classList.add('fixed');
         }
     });
     document.querySelectorAll('.accordion-body button').forEach((btn) => {
